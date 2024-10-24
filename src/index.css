@@ -1,0 +1,435 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  span h1 {
+    @apply text-lg md:text-2xl text-dark_b300 font-bold;
+  }
+  span h2 {
+    @apply text-dark_b300 font-[500] text-[20px];
+  }
+  span h3 {
+    @apply text-[16px] text-dark_b300 font-[500];
+  }
+  span p {
+    @apply text-[16px] text-dark_b100 font-[400];
+  }
+  label h3 {
+    @apply text-[16px] font-medium text-dark_b300;
+  }
+  span h4 {
+    @apply text-[16px] font-[400] text-dark_b300;
+  }
+  span h6 {
+    @apply text-[16px] font-[400]  text-dark_b300;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: #f3f3f3;
+}
+/* Custom Shadows  Starts*/
+:root {
+  --primary-light-shadow: -0.3rem 0rem 0rem #f0c7b5, 0.1rem 0.7rem 1rem #cecece;
+  --btan-shadow: 0.1rem 0.4rem 0.8rem #959595;
+  --success-shadow: -0.3rem 0rem 0rem #c6ecaf, 0.1rem 0.7rem 1rem #cecece;
+
+  /* integration section shadows */
+  --shadow-1: -0.3rem 0rem 0rem #c6ecaf;
+  --shadow-2: -0.3rem 0rem 0rem #ffdfa0;
+  --shadow-3: -0.3rem 0rem 0rem #ef9baa;
+}
+.custom-shadow {
+  box-shadow: var(--primary-light-shadow);
+}
+.custom-shadow-1 {
+  box-shadow: var(--shadow-1);
+}
+.custom-shadow-2 {
+  box-shadow: var(--shadow-2);
+}
+.custom-shadow-3 {
+  box-shadow: var(--shadow-3);
+}
+/* Custom Shadows end */
+/* Spans Css starts */
+
+/* Spans Css ends */
+
+/* Buttons CSS Starts */
+.edit,
+.export,
+.delete,
+.eye {
+  background-color: #da774a26;
+  color: #da774a;
+  padding: 8px;
+  border-radius: 4px;
+}
+.save-btn,
+.configure-pricing-btn,
+.next-btn,
+.live-account-btn,
+.ready-btn,
+.confirm-btn,
+.next-btn,
+.print-preview-btn,
+.button,
+.order-btn,
+.filter-btn {
+  background-color: #da774a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+}
+.revert-btn,
+.cancel-btn,
+.activate-trail-btn,
+.back-btn,
+.back-configuration-btn,
+.next-btn {
+  background-color: transparent;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #da774a;
+  border: 2px solid #da774a;
+  font-weight: 500;
+}
+.add-btn,
+.primary-btn {
+  background-color: #da774a26;
+  color: #da774a;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.success-btn {
+  background-color: #477f2426;
+  color: #477f24;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+/* Buttons CSS ends */
+
+/* Dashboard Css Starts Here */
+/* #main-content {
+  background: url("./assets/dashboard-imgs/rectangle.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 1450px;
+  overflow: hidden;
+} */
+
+#intro-container {
+  background: url("./assets/dashboard-imgs/frame.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
+}
+.bg-onboard {
+  background: linear-gradient(90deg, #5f3131 0%, #2d0f0f 100.07%);
+}
+
+.bg-approved {
+  background: linear-gradient(90deg, #9ad774 0%, #49931b 100.07%);
+}
+
+.pending-bg {
+  background: linear-gradient(90deg, #fec454 0%, #e99a03 100.07%);
+}
+
+.bg-rejected {
+  background: linear-gradient(90deg, #ed4965 0%, #dd0026 100.07%);
+}
+/* Dashboard Css ends Here */
+
+/* Market Place Page Css Starts here */
+.market-place-card-shadow {
+  box-shadow: var(--success-shadow);
+}
+
+#market-place-page .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: var(--slider-bg, #d3d3d3);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#market-place-page .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #2d0f0f;
+  cursor: pointer;
+}
+
+#market-place-page .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #2d0f0f;
+  cursor: pointer;
+}
+
+#market-place-page .slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* Verification page alert section css  starts*/
+#verification-page .element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#verification-page .circle {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 5px 0px;
+}
+
+#verification-page .circle-black {
+  background-color: #da774a;
+}
+
+#verification-page .vline {
+  border-left: 5px solid #e6eaf5;
+  height: 50px;
+  position: relative;
+}
+
+#verification-page .first-line::before {
+  content: "";
+  top: 0;
+  left: -11px;
+  width: 17px;
+  height: 5px;
+  background-color: #e6eaf5;
+  position: absolute;
+  border-radius: 20px;
+}
+#verification-page .main-1 {
+  position: relative;
+  height: 60px;
+  width: 300px;
+  background-color: #e6eaf5;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#verification-page .shape-1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #e6eaf5;
+  border: 1px solid white;
+  transform: rotate(45deg);
+  right: -5px;
+  top: 25px;
+  border: none;
+}
+
+#verification-page .main-2 {
+  position: relative;
+  height: 60px;
+  width: 300px;
+  background-color: #e6eaf5;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#verification-page .shape-2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #e6eaf5;
+  border: 1px solid white;
+  transform: rotate(45deg);
+  left: -5px;
+  top: 25px;
+  border: none;
+}
+
+#verification-page .left-chat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px 0px;
+  margin-top: 10px;
+}
+
+#verification-page .right-chat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px 0px;
+  margin-top: 80px;
+}
+#verification-page .chat-box-container div h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+#verification-page .chat-box-container span {
+  font-size: 15px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 900px) {
+  #verification-page .chat-box-container div h2,
+  #verification-page .chat-box-container span {
+    font-size: 7px;
+  }
+  #verification-page .main-1 {
+    height: 40px;
+    width: 200px;
+  }
+  #verification-page .main-2 {
+    height: 40px;
+    width: 200px;
+  }
+  #verification-page .shape-1,
+  #verification-page .shape-2 {
+    top: 15px;
+  }
+  #verification-page .left-chat-box {
+    gap: 90px;
+    margin-top: 30px;
+  }
+  #verification-page .right-chat-box {
+    gap: 90px;
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  #verification-page .chat-box-container div h2,
+  #verification-page .chat-box-container span {
+    font-size: 7px;
+  }
+
+  #verification-page .main-1 {
+    height: 25px;
+    width: 100px;
+  }
+
+  #verification-page .main-2 {
+    height: 25px;
+    width: 100px;
+  }
+  #verification-page .shape-1,
+  #verification-page .shape-2 {
+    top: 10px;
+  }
+}
+
+/* verification steps page css */
+/* multi step progress bar */
+.steps-container {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 15px;
+  padding: 5px 0px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #2d0f0f;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.step-number-filled {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.step-heading {
+  display: inline-block;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .step-heading {
+    display: none;
+  }
+}
+
+.line {
+  width: 1px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0px 14px;
+}
+.line-filled {
+  width: 1px;
+  height: 35px;
+  border-radius: 10px;
+  margin: 0px 14px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .step-item {
+    gap: 0.5rem;
+  }
+  .step-heading {
+    font-size: 10px;
+  }
+}
+
+/* page heading */
+.page-heading {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+#verification-steps-page span h2 {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 37.5px;
+}
